@@ -15,7 +15,7 @@
     --bttn-second-color: #FFFFFF;
     --border-bttn-color: #E7E9FC;
     --icon-color: #f4f4fd;
-    --second-icon-color: #8E8F99;
+    --second-icon-color: #8e8f99;;
 }
 
 body {
@@ -448,11 +448,6 @@ img {
 .customers-icon-link:is(:hover, :focus) {
     border-color: #404bbf;
     color: #404bbf;
-}
-
-.customers-icon-link:hover .customers-icon,
-.customers-icon-link:focus .customers-icon {
-    fill: #404BBF;
 }
 
 .customers-icon {
