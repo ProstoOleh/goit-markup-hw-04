@@ -108,6 +108,10 @@ img {
     color: var(--first-text-color);    
 }
 
+.studio {
+    color: #404BBF;
+}
+
 .studio::after {
     content:'';
     position: absolute;
@@ -117,6 +121,10 @@ img {
     background-color: #404BBF;
     border-radius: 2px;
     width: 100%;
+}
+
+.portfolio {
+    color: #404BBF;
 }
 
 .portfolio::after {
