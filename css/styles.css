@@ -611,18 +611,11 @@ img {
 
 .portfolio-projects-item {
     width: calc((100% - 2 * 24px) / 3);
-    
-}
-
-.portfolio-projects-item:is(:hover, :focus) {
-    border: 1px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-top: none;
 }
 
 .portfolio-projects-link {
     display: block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .portfolio-cards {
@@ -653,10 +646,22 @@ img {
     overflow: hidden;
 }
 
+
 .projects-block-text {
     position: absolute;
-    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    top: 0;
     font-size: 16px;
     line-height: 1.50;
     letter-spacing: 0.02em;
+    padding: 40px 32px;
+    background-color: var(--background-color-icon);
+    color: var(--fourth-text-color);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+    
+.projects-block:hover .projects-block-text {
+    transform: translateY(0%);
 }
