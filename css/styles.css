@@ -624,7 +624,7 @@ img {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-projects-link:hover {
+.portfolio-projects-link:hover { 
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -636,7 +636,7 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
     transform: translateY(0%);
-}
+} 
 
 .portfolio-cards {
     padding: 32px 16px;
@@ -682,8 +682,11 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     
-.projects-block:is(:hover, :focus) .projects-block-text {
+.portfolio-projects-item:is(:hover, :focus) .projects-block-text { 
     transform: translateY(0%);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* .projects-block:focus .projects-block-text { 
