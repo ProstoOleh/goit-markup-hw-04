@@ -624,8 +624,18 @@ img {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-projects-link:is(:hover, :focus) {
+.portfolio-projects-link:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
     transform:translateY(0%);
+}
+
+.portfolio-projects-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
 }
 
 .portfolio-cards {
@@ -676,6 +686,6 @@ img {
     transform: translateY(0%);
 }
 
-.projects-block:focus .projects-block-text {
-    transform: translateY(0%)
-}
+/* .projects-block:focus .projects-block-text { 
+    transform: translateY(0%);
+ } */
